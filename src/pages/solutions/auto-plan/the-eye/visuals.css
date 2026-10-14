@@ -1,0 +1,26 @@
+
+.eye-process-panel{background:#f8fbff;border:1px solid #d2e2f5;border-radius:18px;padding:24px;color:#17304d;}
+.eye-process-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:22px;}
+.eye-process-card{position:relative;border:1px solid #bcd5eb;border-radius:12px;padding:18px 14px;display:flex;align-items:center;flex-direction:column;background:white;min-width:0;}
+.eye-process-card:not(:last-child):after{content:'→';position:absolute;top:90px;left:calc(100% + 2px);color:#759eca;font-size:24px;font-weight:800;}
+.eye-number{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:6px;background:#1765b7;color:white;font-size:15px;font-weight:800;align-self:flex-start;}
+.eye-visual-icon{display:block;flex-shrink:0;width:64px;height:64px;background-image:url('/assets/autoplan-visuals/architecture-icons-v1.webp');background-size:400% 400%;background-repeat:no-repeat;}
+.eye-process-card>.eye-visual-icon{margin:16px 0 12px;}
+.eye-process-card h3,.eye-function-card h3{font-size:21px;font-weight:800;line-height:1.45;color:#154d88;}
+.eye-process-label{font-size:13px;font-weight:650;line-height:1.8;margin-top:8px;text-align:center;color:#50718f;min-height:46px;}
+.eye-card-body{font-size:16px;line-height:1.85;color:#4b6178;margin-top:12px;}
+.eye-result{display:flex;justify-content:center;align-items:center;gap:7px;background:#edf5fd;border:1px solid #d5e6f6;border-radius:8px;padding:11px 9px;font-size:14px;font-weight:750;color:#22598c;line-height:1.6;margin-top:20px;width:100%;}
+.eye-functions-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;}
+.eye-function-card{display:flex;flex-direction:column;border:1px solid #c9dff0;border-radius:12px;padding:20px;background:#fff;min-width:0;}
+.eye-function-main{display:grid;grid-template-columns:64px minmax(0,1fr);gap:16px;margin-top:18px;flex:1;}
+.eye-function-card .eye-result{margin-top:24px;}
+.eye-process-compact{padding:18px;}
+.eye-process-compact .eye-process-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+.eye-process-compact .eye-process-card{padding:12px;}
+.eye-process-compact .eye-process-card:after{display:none;}
+.eye-process-compact h3{font-size:17px;}
+.eye-process-compact .eye-process-label{font-size:12px;min-height:0;}
+.eye-process-compact .eye-result{font-size:12px;margin-top:12px;}
+.eye-process-compact .eye-visual-icon{width:52px;height:52px;margin:8px 0;}
+@media(max-width:1050px){.eye-process-grid{grid-template-columns:repeat(3,minmax(0,1fr));}.eye-process-card:after{display:none;}.eye-functions-grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+@media(max-width:600px){.eye-process-panel{padding:16px;}.eye-process-grid{grid-template-columns:1fr;}.eye-process-compact .eye-process-grid{grid-template-columns:repeat(2,minmax(0,1fr));}.eye-functions-grid{grid-template-columns:1fr;}.eye-function-card{padding:18px;}}

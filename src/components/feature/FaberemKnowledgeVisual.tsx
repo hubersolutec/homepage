@@ -1,0 +1,3 @@
+export default function FaberemKnowledgeVisual(){
+ return <figure className="faberem-knowledge-visual"><div className="faberem-knowledge-art"><img src="/assets/faberem-visuals/engineering-knowledge-3d-v1.png" alt="형상과 메시, 조건과 규칙, 실행 결과와 검토 근거가 지식 DB에 축적되고 사례 검색과 조건 검토를 거쳐 다음 해석에 활용되는 3D 구조" loading="lazy"/><div className="knowledge-source-labels">{['형상·Mesh','조건·Rule','Run·결과','검토 근거'].map(label=><b key={label}>{label}</b>)}</div><strong className="knowledge-db-label">해석업무 지식 DB</strong><div className="knowledge-use-labels">{['관련 사례 검색','조건 검토','다음 Run의 근거'].map(label=><b key={label}>{label}</b>)}</div></div><figcaption className="sr-only">원본 Run과 근거를 연결해 축적하고 다음 해석에 재사용합니다.</figcaption></figure>;
+}
